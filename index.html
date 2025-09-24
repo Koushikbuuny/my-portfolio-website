@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bheematati Koushik - Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000;
+            color: #e5e7eb; /* Gray-200 */
+        }
+        .glass-effect {
+            background: rgba(31, 31, 31, 0.5); /* A slightly lighter, semi-transparent black */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-color {
+            color: #ffffff; /* White */
+        }
+        .btn-primary {
+            @apply px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-white hover:bg-gray-200 transition-colors;
+        }
+        .section-heading {
+            @apply text-3xl md:text-4xl font-bold mb-12 text-center relative;
+        }
+        .section-heading::after {
+            content: '';
+            @apply w-24 h-1 bg-white block mx-auto mt-4 rounded-full;
+        }
+    </style>
+</head>
+<!-- Trigger deployment -->
+<body class="antialiased">
+    <!-- Header & Navbar -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect">
+        <nav class="container mx-auto px-6 py-4 flex justify-end items-center">
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-gray-300 transition-colors">About</a>
+                <a href="#skills" class="hover:text-gray-300 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-gray-300 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-gray-300 transition-colors">Experience</a>
+                <a href="#contact" class="px-4 py-2 border border-white rounded-md hover:bg-white hover:text-black transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-slate-700">About</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-slate-700">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-slate-700">Projects</a>
+            <a href="#experience" class="block py-2 px-6 text-sm hover:bg-slate-700">Experience</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-slate-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center pt-24">
+            <div>
+                <p class="text-gray-400 text-lg mb-4">Hi, my name is</p>
+                <h1 class="text-4xl md:text-7xl font-bold text-slate-100">Bheematati Koushik.</h1>
+                <h2 class="text-4xl md:text-7xl font-bold text-slate-400 mt-2">I build things for the web.</h2>
+                <p class="mt-6 max-w-xl text-lg text-slate-400">
+                    I'm a passionate web developer focused on creating modern and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I enjoy bringing ideas to life in the browser.
+                </p>
+                <a href="#projects" class="inline-block mt-8 px-8 py-4 border border-white rounded-md text-white hover:bg-white hover:text-black transition-colors text-lg">
+                    Check out my work!
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24">
+            <h2 class="section-heading">About Me</h2>
+            <div class="grid md:grid-cols-5 gap-10 items-center">
+                <div class="md:col-span-3 text-slate-400 text-lg space-y-4">
+                   <p>
+                        I am a dedicated and results-oriented web developer, currently pursuing my degree at <span class="font-semibold text-white">VIT-AP University</span>. My passion lies in crafting elegant solutions to complex problems and building intuitive, user-centric web applications.
+                    </p>
+                    <p>
+                        With a solid foundation in front-end and back-end development, I specialize in creating responsive, high-performance websites from concept to deployment. I am a collaborative team player with a commitment to continuous learning and staying abreast of the latest industry trends.
+                    </p>
+                     <p>
+                        Beyond my technical pursuits, I have honed my leadership and communication skills through organizing technology events and coordinating various student-led initiatives.
+                    </p>
+                </div>
+                <div class="md:col-span-2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full bg-gray-500/20 flex items-center justify-center overflow-hidden border-2 border-gray-400">
+                         <img src="image_f6ade7.jpg" alt="Bheematati Koushik" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24">
+            <h2 class="section-heading">Technical Skills</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 21.35A6.5 6.5 0 0 1 8.5 8.5c0-2.31 1.01-4.4 2.63-5.87M18 10a4 4 0 0 1-4-4 4 4 0 0 1-4-4M18 8h1a2 2 0 0 1 2 2v2M18 17h4v-2M13 14h6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2Z"></path></svg>
+                    <p class="text-xl font-semibold">Java</p>
+                </div>
+                <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 12a4.5 4.5 0 0 0-4.5 4.5 4.5 4.5 0 0 0 8.36-2.2"></path><path d="M12 12a4.5 4.5 0 0 1 4.5-4.5 4.5 4.5 0 0 1-1.25 3.25"></path></svg>
+                    <p class="text-xl font-semibold">C</p>
+                </div>
+                <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <p class="text-xl font-semibold">HTML</p>
+                </div>
+                <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 9.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 0 0 5"></path><path d="M12 14.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 0 0-5"></path><path d="M9.5 12a2.5 2.5 0 0 1-5 0 2.5 2.5 0 0 0-5 0"></path><path d="M14.5 12a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 0 5 0"></path></svg>
+                    <p class="text-xl font-semibold">CSS</p>
+                </div>
+                <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                    <p class="text-xl font-semibold">PHP</p>
+                </div>
+                <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.5"></circle><path d="M18.83 2.17A10 10 0 0 0 5.17 18.83"></path><path d="M12 2a10 10 0 0 1 10 10"></path><path d="M22 12a10 10 0 0 1-10 10"></path><path d="M18.83 21.83A10 10 0 0 1 5.17 5.17"></path><path d="M12 22A10 10 0 0 1 2 12"></path><path d="M2 12A10 10 0 0 1 12 2"></path></svg>
+                    <p class="text-xl font-semibold">React.js</p>
+                </div>
+                 <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2v2h-2V7h2z"></path><path d="M5 15V9a2 2 0 0 1 2-2h2"></path><circle cx="12" cy="12" r="3"></circle><path d="M9 12h6"></path><path d="M8 7v10"></path></svg>
+                    <p class="text-xl font-semibold">Robotics</p>
+                </div>
+                 <div class="p-6 rounded-lg glass-effect hover:-translate-y-2 transition-transform hover:border-white border border-transparent">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M18.36 5.64l-1.42 1.42"></path><path d="M7.06 7.06l-1.42-1.42"></path><path d="M18.36 18.36l-1.42-1.42"></path><path d="M7.06 17.06l-1.42 1.42"></path><circle cx="12" cy="12" r="4"></circle><path d="M12 16a4 4 0 0 0 4-4"></path><path d="M8 12a4 4 0 0 0 4 4"></path></svg>
+                    <p class="text-xl font-semibold">IoT</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24">
+            <h2 class="section-heading">Selected Works</h2>
+            <div class="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+                <!-- Project Card 1 -->
+                <div class="p-6 rounded-lg glass-effect flex flex-col md:flex-row gap-6 hover:shadow-2xl hover:shadow-gray-400/20 transition-shadow">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold accent-color">Automatic Trolley System</h3>
+                            <div class="flex space-x-4 items-center">
+                                <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">A smart load-carrying system designed to reduce human effort. It utilizes sensors and microcontrollers to autonomously follow the user and navigate around obstacles. Ideal for environments such as airports, malls, and industrial facilities.</p>
+                        <ul class="flex flex-wrap gap-2 mt-4">
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">Robotics</li>
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">IoT</li>
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">Microcontrollers</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                 <div class="p-6 rounded-lg glass-effect flex flex-col md:flex-row gap-6 hover:shadow-2xl hover:shadow-gray-400/20 transition-shadow">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold accent-color">AI Dashboard for Bioreactor Sensors</h3>
+                             <div class="flex space-x-4 items-center">
+                                <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">An AI-powered dashboard that provides precise sensor readings for parameters like humidity and temperature. The platform also includes features for managing supplier and administrator information, streamlining data monitoring and operational oversight.</p>
+                         <ul class="flex flex-wrap gap-2 mt-4">
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">AI/ML</li>
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">Data Visualization</li>
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">Dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="p-6 rounded-lg glass-effect flex flex-col md:flex-row gap-6 hover:shadow-2xl hover:shadow-gray-400/20 transition-shadow">
+                    <div class="flex-grow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold accent-color">Data Dolphins: Marine Research Dashboard</h3>
+                             <div class="flex space-x-4 items-center">
+                                <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub Repository" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo" class="text-gray-400 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">An interactive platform demonstrating how AI can transform fragmented oceanographic data into actionable scientific insights. Features an ocean-themed design with interactive maps and real-time charts, serving as a mission control center for marine research.</p>
+                        <ul class="flex flex-wrap gap-2 mt-4">
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">Front-End Dev</li>
+                             <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">Data Engineering</li>
+                            <li class="text-xs bg-gray-800 border border-gray-700 text-gray-300 px-3 py-1 rounded-full">AI Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience & Achievements -->
+        <section id="experience" class="py-24">
+             <h2 class="section-heading">Experience & Achievements</h2>
+             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-200 mb-8 text-center md:text-left">Leadership & Coordination</h3>
+                    <div class="relative border-l-2 border-gray-700 space-y-10">                  
+                        <div class="pl-8 relative">
+                            <div class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-black border-2 border-white"></div>
+                            <h4 class="text-lg font-semibold text-slate-100">Student Coordinator</h4>
+                            <p class="text-sm text-slate-400">VITOPIA 2025</p>
+                            <p class="mt-1 text-slate-400">Coordinated student activities and logistics for a major university event.</p>
+                        </div>
+                        <div class="pl-8 relative">
+                            <div class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-black border-2 border-white"></div>
+                            <h4 class="text-lg font-semibold text-slate-100">PR Team Lead</h4>
+                             <p class="text-sm text-slate-400">Kalki Club (2023–2024)</p>
+                            <p class="mt-1 text-slate-400">Led public relations efforts, managed communications, and promoted club events.</p>
+                        </div>
+                        <div class="pl-8 relative">
+                            <div class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-black border-2 border-white"></div>
+                            <h4 class="text-lg font-semibold text-slate-100">Student Coordinator</h4>
+                            <p class="text-sm text-slate-400">VIKAS 2024 (Innovation Event)</p>
+                            <p class="mt-1 text-slate-400">Facilitated an innovation-focused event, assisting participants and judges.</p>
+                        </div>
+                        <div class="pl-8 relative">
+                           <div class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-black border-2 border-white"></div>
+                            <h4 class="text-lg font-semibold text-slate-100">Event Organizer</h4>
+                            <p class="text-sm text-slate-400">Samgramam Tech Events</p>
+                            <p class="mt-1 text-slate-400">Organized technical events centered around the theme of "Challenges with Artificial Intelligence".</p>
+                        </div>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-bold text-slate-200 mb-8 text-center md:text-left">Awards & Recognition</h3>
+                    <ul class="space-y-4">
+                        <li class="p-4 rounded-lg glass-effect border border-transparent hover:border-white transition-colors flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white flex-shrink-0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <div>
+                                <span class="font-bold text-white">WINNER</span>
+                                <p class="text-slate-400 text-sm">Global Goal Hackathon 2025 (AIESEC)</p>
+                            </div>
+                        </li>
+                        <li class="p-4 rounded-lg glass-effect border border-transparent hover:border-white transition-colors flex items-center gap-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white flex-shrink-0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <div>
+                                <span class="font-bold text-white">WINNER</span>
+                                 <p class="text-slate-400 text-sm">SHARK TANK IN VIT-AP 2025 (IIEC)</p>
+                            </div>
+                        </li>
+                        <li class="p-4 rounded-lg glass-effect border border-transparent hover:border-white transition-colors flex items-center gap-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white flex-shrink-0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <div>
+                                <span class="font-bold text-white">RUNNER-UP</span>
+                                 <p class="text-slate-400 text-sm">HUSTLE HUB 2025 (VSB)</p>
+                            </div>
+                        </li>
+                         <li class="p-4 rounded-lg glass-effect border border-transparent hover:border-white transition-colors flex items-center gap-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white flex-shrink-0"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <div>
+                                <span class="font-bold text-white">Participant</span>
+                                 <p class="text-slate-400 text-sm">Brainthon 2022</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24">
+            <h2 class="section-heading">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto text-center space-y-8">
+                 <p class="text-lg text-slate-400 mb-8">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to connect with me through any of the platforms below.
+                </p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-lg">
+                    <a href="mailto:bheematatikoushik@gmail.com" class="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        bheematatikoushik@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/bheematati-koushik-237469277/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        LinkedIn
+                    </a>
+                     <a href="tel:+919000301101" class="flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        9000301101
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center text-slate-400">
+            <p>&copy; 2025 Bheematati Koushik. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Designed & Built with ❤️</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu on link click
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Header background on scroll
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.add('py-4');
+                    header.classList.remove('py-2');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
